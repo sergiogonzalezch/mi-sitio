@@ -1,39 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Web Sencilla</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Mi Sitio</h1>
-    <nav>
-      <ul>
-        <li class="nav-li"><a href="index.html" class="nav-anchor">Inicio</a></li>
-        <li class="nav-li"><a href="#sobre-mi" class="nav-anchor">Sobre Mí</a></li>
-        <li class="nav-li"><a href="#proyectos" class="nav-anchor">Proyectos</a></li>
-        <li class="nav-li"><a href="#contacto" class="nav-anchor">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="content-section" id="sobre-mi">
-      <h2>Sobre Mí</h2>
-      <!-- Contenido de la sección sobre mí -->
-    </section>
-    <section class="content-section" id="proyectos">
-      <h2>Proyectos</h2>
-      <!-- Contenido de la sección de proyectos -->
-    </section>
-    <section class="content-section" id="contacto">
-      <h2>Contacto</h2>
-      <!-- Contenido de la sección de contacto -->
-    </section>
-  </main>
-  <footer>
-      <span>Contacto: correo@example.com</span>
-  </footer>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi Página Web Sencilla</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/45707fc38e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mi portafolio web</h1>
+      <h2>desarrollador web fullstack</h2>
+      <nav>
+        <ul>
+          <li class="nav-li">
+            <a href="index.html" class="nav-anchor">Inicio</a>
+          </li>
+          <li class="nav-li">
+            <a href="#sobre-mi" class="nav-anchor">Sobre Mí</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-anchor" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-li">
+            <a href="#proyectos" class="nav-anchor">Proyectos</a>
+          </li>
+          <li class="nav-li">
+            <a href="#contacto" class="nav-anchor">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="content-section" id="sobre-mi">
+        <h3>Sobre Mí</h3>
+        <p>
+          ¡Hola! Soy Sergio Gonzalez, un desarrollador web. En esta página,
+          encontrarás una muestra de mi trabajo y habilidades. Desde diseño web
+          hasta soluciones innovadoras, estoy aquí para ayudarte a alcanzar tus
+          objetivos.
+        </p>
+        <h4>Educación</h4>
+        <ul>
+          <li>
+            Lic. en ingeniería en sistemas computacionales, Universidad Autónoma
+            de Campeche Facultad de Ingeniería
+          </li>
+        </ul>
+        <h4>Experiencia Laboral</h4>
+        <ul>
+          <li>Becario y desarrollador fullstack en ITrends 2023-2024</li>
+          <li>
+            Prácticas profesionales en el Centro de Ingeniería Computacional,
+            Facultad de Ingeniería, Universidad Autónoma de Campeche 2021-2022
+          </li>
+        </ul>
+        <h4>Roles</h4>
+        <ul>
+          <li>Desarrollador frontend</li>
+          <li>Desarrollador backend</li>
+          <li>Mantenimiento wordpress</li>
+          <li>Pruebas unitarias</li>
+        </ul>
+      </section>
+      <section class="content-section" id="habilidades">
+        <h3>Habilidades</h3>
+        <!-- Contenido de la sección de habilidades -->
+      </section>
+      <section class="content-section" id="proyectos">
+        <h3>Proyectos</h3>
+        <!-- Contenido de la sección de proyectos -->
+      </section>
+      <section class="content-section" id="contacto">
+        <h3>Contacto</h3>
+        <p>
+          ¡Me encantaría saber de ti! Si estás interesado en mi trabajo o tienes
+          alguna pregunta, no dudes en ponerte en contacto conmigo:
+        </p>
+        <ul>
+          <li>
+            Correo electrónico:
+            <a href="mailto:correo@example.com">correo@example.com</a>
+          </li>
+          <li>Teléfono: +123456789</li>
+          <li>
+            Redes sociales:
+            <ul>
+              <li>
+                <a href="https://www.twitter.com/ejemplo" target="_blank"
+                  >Twitter<i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/ejemplo" target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/ejemplo" target="_blank">GitHub</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="row">
+          <div class="col-md-6">
+            <span
+              >Contacto:
+              <a href="mailto:correo@example.com">correo@example.com</a></span
+            >
+          </div>
+          <div class="col-md-6">
+            <ul class="social-media">
+              <li>
+                <a href="https://twitter.com/ejemplo" target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/ejemplo" target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/ejemplo" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
