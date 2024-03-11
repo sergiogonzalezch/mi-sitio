@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,10 +6,10 @@ body {
   background-color: #f0f0f0;
 }
 
-header {
+header, footer {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -23,22 +24,14 @@ nav ul {
   margin-right: 20px;
 }
 
-.nav-anchor {
+.nav-anchor, .social-media a {
   color: #fff;
   text-decoration: none;
 }
 
 .content-section {
   margin-bottom: 40px;
-  padding: 10% 5%;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 5%;
-  margin-top: 20px;
-  text-align: center;
+  padding: 5% 5%;
 }
 
 .footer-container {
@@ -52,7 +45,7 @@ footer .row {
   justify-content: space-between;
 }
 
-
+/* Estilos específicos */
 .social-media {
   list-style: none;
   padding: 0;
@@ -60,23 +53,42 @@ footer .row {
   justify-content: center;
 }
 
+.social-media li, .contact-social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .social-media li {
   margin-right: 20px;
 }
 
-.social-media a {
+.contact-social-media a {
+  text-decoration: none;
+}
+
+.contact-social-media a i {
+  margin-left: 5px;
+}
+
+/* Estilos para tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
   color: #fff;
 }
 
-li .contact-social-media{
-  list-style:none;
-  margin: 0;
-  padding: 0;
-}
-li .contact-social-media a {
-  text-decoration:none;
-}
-
-li .contact-social-media a i {
-  margin-left: 5px;
+/* Estilos específicos para la tabla de habilidades */
+#habilidades table {
+  margin-top: 20px;
 }
