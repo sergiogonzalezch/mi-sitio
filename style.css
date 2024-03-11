@@ -52,6 +52,7 @@ footer .row {
   justify-content: space-between;
 }
 
+
 .social-media {
   list-style: none;
   padding: 0;
@@ -63,7 +64,19 @@ footer .row {
   margin-right: 20px;
 }
 
-.social-media li a {
+.social-media a {
   color: #fff;
-  text-decoration: none; /* Eliminar decoraciones */
+}
+
+li .contact-social-media{
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+li .contact-social-media a {
+  text-decoration:none;
+}
+
+li .contact-social-media a i {
+  margin-left: 5px;
 }
