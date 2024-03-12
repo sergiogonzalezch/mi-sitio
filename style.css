@@ -1,3 +1,13 @@
+/* Nueva paleta de colores */
+:root {
+  --steel-pink: #c345d0ff;
+  --green-blue: #1365adff;
+  --white: #ffffffff;
+  --polynesian-blue: #0c4f9eff;
+  --air-superiority-blue: #62a2d0ff;
+  --night: #1E1E1E ;
+}
+
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
@@ -6,11 +16,42 @@ body {
   background-color: #f0f0f0;
 }
 
-header, footer {
+footer {
   background-color: #333;
   color: #fff;
   padding: 20px 0;
   text-align: center;
+}
+
+.landing-header {
+  position: relative;
+  height: 100vh; /* Hacemos que el encabezado ocupe toda la altura de la ventana */
+  margin: 0;
+  padding: 0;
+}
+
+.background-overlay {
+  background-image: url(tech.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right; 
+  position: absolute;
+  top: 0;
+  right: 0; 
+  width: 100%; /* Cambia el tamaño del fondo para que ocupe toda la altura y el ancho del encabezado */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.navbar {
+  z-index: 1000; /* Asegurarse de que el navbar esté por encima de otros elementos */
+  top: 0;
+  left: 0;
+  padding: 20px;
 }
 
 nav ul {
@@ -51,6 +92,9 @@ footer .row {
   padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+  color: #fff; /* Color de texto */
+  text-align: center;
 }
 
 .social-media li, .contact-social-media {
