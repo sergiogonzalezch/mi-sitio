@@ -6,7 +6,6 @@
   --polynesian-blue: #0c4f9eff;
   --air-superiority-blue: #62a2d0ff;
   --night: #1E1E1E;
-  --title-background: var(--steel-pink); /* Fondo de color para los títulos */
 }
 
 /* Cabeceras */
@@ -176,7 +175,53 @@ section {
 }
 
 .nav-li a:hover::after {
-  background-color: var(--steel-pink); /* Cambiar el color de la línea al color definido en la paleta */
+  background-color: var(--green-blue); /* Cambiar el color de la línea al color definido en la paleta */
+}
+
+/*  */
+.card {
+  border: none; /* Eliminar el borde del card */
+  border-radius: 10px; /* Añadir bordes redondeados al card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregar una sombra suave al card */
+}
+
+.card-header{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: none; 
+  background-color: #fff;
+}
+.card-header h3 {
+  font-size: 5rem; /* Tamaño del título */
+  font-weight: 800;
+}
+
+.detalles h4 {
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.detalles ul {
+  list-style-type: none; /* Eliminar viñetas */
+  padding-left: 0; /* Eliminar el espacio a la izquierda de las listas */
+}
+
+.detalles ul li {
+  margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+/*  */
+
+#habilidades {
+  background-color: #e0e0e0; /* Fondo alternativo para la sección "Habilidades" */
+}
+
+#proyectos {
+  background-color: #d0d0d0; /* Fondo alternativo para la sección "Proyectos" */
+}
+
+#contacto {
+  background-color: #c0c0c0; /* Fondo alternativo para la sección "Contacto" */
 }
 
 footer {
@@ -206,39 +251,4 @@ footer .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.sobre-titulo {
-  font-size: 5rem; /* Tamaño del título */
-  font-weight: 800;
-  margin-bottom: 50px; /* Espacio entre el título y el texto */
-}
-.sobre-detalle {
-  margin-top: 20px; /* Espacio entre los detalles */
-}
-
-.sobre-detalle h4 {
-  color: var(--steel-pink); /* Color de los títulos de detalle */
-}
-
-.sobre-detalle ul {
-  list-style-type: none; /* Eliminar viñetas */
-  padding-left: 0; /* Eliminar el espacio a la izquierda de las listas */
-}
-
-.sobre-detalle ul li {
-  margin-bottom: 10px; /* Espacio entre elementos de la lista */
-}
-
-
-#habilidades {
-  background-color: #e0e0e0; /* Fondo alternativo para la sección "Habilidades" */
-}
-
-#proyectos {
-  background-color: #d0d0d0; /* Fondo alternativo para la sección "Proyectos" */
-}
-
-#contacto {
-  background-color: #c0c0c0; /* Fondo alternativo para la sección "Contacto" */
 }
