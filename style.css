@@ -5,7 +5,8 @@
   --white: #ffffffff;
   --polynesian-blue: #0c4f9eff;
   --air-superiority-blue: #62a2d0ff;
-  --night: #1E1E1E ;
+  --night: #1E1E1E;
+  --title-background: var(--steel-pink); /* Fondo de color para los títulos */
 }
 
 /* Estilos generales */
@@ -26,8 +27,9 @@ footer {
 .landing-header {
   position: relative;
   height: 100vh; /* Hacemos que el encabezado ocupe toda la altura de la ventana */
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Alinea los elementos al principio del eje principal (izquierda) */
+  align-items: center; /* Centra verticalmente los elementos */
 }
 
 .background-overlay {
@@ -35,23 +37,27 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right; 
-  position: absolute;
-  top: 0;
-  right: 0; 
+  position: relative;
   width: 100%; /* Cambia el tamaño del fondo para que ocupe toda la altura y el ancho del encabezado */
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
-  text-align: center;
 }
 
 .navbar {
+  position: absolute;
+  top: 20px; /* Ajusta la posición vertical según sea necesario */
+  right: 20px; /* Mueve el navbar a la esquina superior derecha */
   z-index: 1000; /* Asegurarse de que el navbar esté por encima de otros elementos */
-  top: 0;
-  left: 0;
-  padding: 20px;
+}
+
+.titles {
+  background-color: var(--title-background); /* Aplicamos el fondo de color */
+  padding: 20px; /* Ajusta el espaciado según sea necesario */
+  border-radius: 10px; /* Opcional: para bordes redondeados */
+  bottom: 50%;
+  color: #fcfcfc;
+  left: 100px;
+  position: absolute;
 }
 
 nav ul {
