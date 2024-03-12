@@ -208,15 +208,28 @@ footer .row {
   justify-content: space-between;
 }
 
-/* Estilos específicos para la tabla de habilidades */
-.skills {
-  margin-top: 20px;
-}
-
 .sobre-titulo {
   font-size: 5rem; /* Tamaño del título */
   font-weight: 800;
+  margin-bottom: 50px; /* Espacio entre el título y el texto */
 }
+.sobre-detalle {
+  margin-top: 20px; /* Espacio entre los detalles */
+}
+
+.sobre-detalle h4 {
+  color: var(--steel-pink); /* Color de los títulos de detalle */
+}
+
+.sobre-detalle ul {
+  list-style-type: none; /* Eliminar viñetas */
+  padding-left: 0; /* Eliminar el espacio a la izquierda de las listas */
+}
+
+.sobre-detalle ul li {
+  margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
 
 #habilidades {
   background-color: #e0e0e0; /* Fondo alternativo para la sección "Habilidades" */
