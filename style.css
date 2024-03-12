@@ -183,6 +183,7 @@ section {
   border: none; /* Eliminar el borde del card */
   border-radius: 10px; /* Añadir bordes redondeados al card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregar una sombra suave al card */
+  padding: 5%;
 }
 
 .card-header{
