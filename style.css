@@ -1,37 +1,42 @@
 /* Nueva paleta de colores */
 :root {
   --steel-pink: #c345d0ff;
-  --green-blue: #1365adff;
-  --white-break: #f0f0f0;
+  --green-blue: rgb(19, 168, 173);
+  --white-break: #f7f7f7;
   --polynesian-blue: #0c4f9eff;
   --air-superiority-blue: #62a2d0ff;
   --night: #1E1E1E;
   --title-background: var(--steel-pink); /* Fondo de color para los títulos */
 }
 
-/* Estilos generales */
+/* Cabeceras */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Estilos */
+
 body {
+  background-color: var(--white-break);
   font-family: Arial, sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
   margin: 0;
   padding: 0;
-  background-color: var(--white-break);
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+section {
+  padding: 10% 5%;
+  margin: 100px 0px;
 }
 
-.landing-header {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
+/* Header */
 .background-overlay {
   background-image: url(media/svg/bg-waves.svg);
   background-repeat: no-repeat;
@@ -43,14 +48,14 @@ footer {
   color: #fff;
 }
 
-.navbar {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
+.landing-header {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-/* Estilos para los títulos */
 /* Estilos para los títulos */
 .titles {
   background-image: url(media/svg/shape.svg);
@@ -58,7 +63,7 @@ footer {
   width: 600px;
   padding: 10px;
   bottom: 300px;
-  color: #fcfcfc;
+  color: #fff;
   left: 100px; /* Ajuste de posición a la izquierda */
   position: absolute;
   background-repeat: no-repeat;
@@ -84,94 +89,6 @@ footer {
   font-weight: 600;
 }
 
-
-/* Estilo del navbar */
-.navbar {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-  font-weight: bold; /* Hacer la fuente más resaltante */
-}
-
-/* Estilo de los elementos del navbar */
-.nav-li {
-  display: inline;
-  margin-right: 30px; /* Aumentar el espacio entre los enlaces */
-}
-
-.nav-li a {
-  position: relative; /* Establecer posición relativa para el enlace */
-  text-decoration: none; /* Quitar el subrayado predeterminado */
-  font-size: 18px; /* Aumentar el tamaño del texto */
-  font-weight: bold; /* Hacer el texto más grueso */
-  color: #fff; /* Establecer el color del texto como blanco */
-  transition: color 0.3s ease; /* Transición suave del color */
-}
-
-.nav-li a::after {
-  content: ''; /* Agregar contenido para el pseudo-elemento */
-  position: absolute; /* Establecer posición absoluta */
-  left: 0;
-  bottom: -3px; /* Posicionar la línea debajo del texto */
-  width: 100%;
-  height: 2px; /* Grosor de la línea */
-  background-color: transparent; /* Color inicial de la línea */
-  transition: background-color 0.3s ease; /* Transición suave del color */
-}
-
-.nav-li a:hover::after {
-  background-color: var(--steel-pink); /* Cambiar el color de la línea al color definido en la paleta */
-}
-
-nav ul, .social-media, .contact-social-media {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-anchor, .social-media a, .contact-social-media a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.content-section {
-  margin-bottom: 40px;
-  padding: 5% 5%;
-}
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-footer .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-/* Estilos para tablas */
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
-th {
-  background-color: #333;
-  color: #fff;
-}
-
-/* Estilos específicos para la tabla de habilidades */
-.skills {
-  margin-top: 20px;
-}
 .svg-container {
   position: relative;
   width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
@@ -221,4 +138,94 @@ th {
 /* Aplicar animación a las pantallas */
 .svg-item:last-child img {
   animation: moveRight 5s infinite alternate; /* Animación de las pantallas */
+}
+
+/* Estilo del navbar */
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-weight: bold; /* Hacer la fuente más resaltante */
+}
+
+/* Estilo de los elementos del navbar */
+.nav-li {
+  display: inline;
+  margin-right: 30px; /* Aumentar el espacio entre los enlaces */
+}
+
+.nav-li a {
+  position: relative; /* Establecer posición relativa para el enlace */
+  text-decoration: none; /* Quitar el subrayado predeterminado */
+  font-size: 18px; /* Aumentar el tamaño del texto */
+  font-weight: bold; /* Hacer el texto más grueso */
+  color: #fff; /* Establecer el color del texto como blanco */
+  transition: color 0.3s ease; /* Transición suave del color */
+}
+
+.nav-li a::after {
+  content: ''; /* Agregar contenido para el pseudo-elemento */
+  position: absolute; /* Establecer posición absoluta */
+  left: 0;
+  bottom: -3px; /* Posicionar la línea debajo del texto */
+  width: 100%;
+  height: 2px; /* Grosor de la línea */
+  background-color: transparent; /* Color inicial de la línea */
+  transition: background-color 0.3s ease; /* Transición suave del color */
+}
+
+.nav-li a:hover::after {
+  background-color: var(--steel-pink); /* Cambiar el color de la línea al color definido en la paleta */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul, .social-media, .contact-social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-anchor, .social-media a, .contact-social-media a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Estilos específicos para la tabla de habilidades */
+.skills {
+  margin-top: 20px;
+}
+
+.sobre-titulo {
+  font-size: 5rem; /* Tamaño del título */
+  font-weight: 800;
+}
+
+#habilidades {
+  background-color: #e0e0e0; /* Fondo alternativo para la sección "Habilidades" */
+}
+
+#proyectos {
+  background-color: #d0d0d0; /* Fondo alternativo para la sección "Proyectos" */
+}
+
+#contacto {
+  background-color: #c0c0c0; /* Fondo alternativo para la sección "Contacto" */
 }
