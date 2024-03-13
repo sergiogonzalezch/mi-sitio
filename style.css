@@ -22,10 +22,9 @@ h6 {
 
 body {
   background-color: var(--white-break);
-  font-family: Arial, sans-serif;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 1.2rem;
-  font-weight: lighter;
+  font-weight: 300;
   margin: 0;
   padding: 0;
 }
@@ -225,7 +224,7 @@ section {
 }
 
 #habilidades h3{
-  font-weight: 600;
+  font-weight: bold;
   font-size: 3rem;
 }
 
@@ -262,19 +261,22 @@ padding:0 50px;
   background: linear-gradient(to right, #4085ce, #17cfa1); /* Degradado de color */
 }
 
-#proyectos {
-  background-color: #d0d0d0; /* Fondo alternativo para la sección "Proyectos" */
+#proyectos h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 50px;
 }
 
 #contacto h3 {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 50px;
 }
 
 #contact-form {
   max-width: 600px;
   margin: 0 auto;
+  position: relative; /* Añadir posición relativa al formulario */
 }
 
 .form-group {
@@ -282,17 +284,29 @@ padding:0 50px;
 }
 
 label {
-  display: block;
+  display: block; /* Mostrar cada label en una línea nueva */
+  margin-bottom: 10px; /* Agregar espacio entre los labels */
+  font-weight: bold; /* Hacer el texto del label más grueso */
+  color: var(--steel-pink); /* Utilizar el color definido en la paleta de colores */
 }
 
+/* Estilos para los input y textarea del formulario */
 input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 30px;
   outline: none;
+  transition: border-color 0.3s ease; /* Transición suave del color del borde */
+}
+
+/* Estilos para los input y textarea cuando están enfocados */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: var(--steel-pink); /* Cambiar el color del borde al color definido en la paleta de colores */
 }
 
 textarea {
@@ -307,6 +321,9 @@ textarea {
   cursor: pointer;
   transition: background-color 0.5s ease;
   background-color: var(--steel-pink);
+  position: absolute; /* Añadir posición absoluta */
+  bottom: -50px; /* Colocar el botón en la parte inferior */
+  right: 0; /* Alinear el botón a la derecha */
 }
 
 .btn-submit:hover {
