@@ -266,16 +266,66 @@ padding:0 50px;
 }
 
 #contacto {
-  background-color: #c0c0c0; /* Fondo alternativo para la sección "Contacto" */
+  padding: 50px 20px;
 }
 
-nav ul, .contact-social-media {
+#contacto h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  /* Eliminar negrita */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none; /* Eliminar el contorno al seleccionar */
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn-submit {
+  padding: 10px 20px;
+  background-color: var(--steel-pink);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Alineación a la derecha */
+  margin-left: auto;
+  display: block;
+}
+
+.btn-submit:hover {
+  background-color: #17a8ad;
+}
+
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.nav-anchor, .contact-social-media a {
+.nav-anchor a {
   color: #fff;
   text-decoration: none;
 }
