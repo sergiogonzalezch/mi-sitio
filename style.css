@@ -24,8 +24,7 @@ body {
 }
 
 section {
-  padding: 10% 5%;
-  margin: 100px 0;
+  padding: 8% 5%;
 }
 
 /* Header */
@@ -264,20 +263,56 @@ padding:0 50px;
   margin-bottom: 50px;
 }
 
+.img-proyectos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proyectos{
+  width: 70%;
+  height: auto;
+}
+
 #contacto h3 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 50px;
 }
 
-#contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative; /* Añadir posición relativa al formulario */
+.image-container {
+  width: 100%; /* Ajustar al ancho completo de la columna */
+  height: auto; /* Ajustar la altura automáticamente */
+  text-align: center; /* Centrar horizontalmente */
 }
 
-.form-group {
-  margin-bottom: 20px;
+.image-container img {
+  max-width: 100%; /* Establecer el ancho máximo al 100% */
+  height: auto; /* Ajustar la altura automáticamente */
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+  padding: 0 20px; /* Ajustar el espacio alrededor del formulario */
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px; /* Espacio entre grupos de formulario */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--steel-pink); /* Cambiar el color del borde al hacer foco */
 }
 
 label {
@@ -318,25 +353,11 @@ textarea {
   cursor: pointer;
   transition: background-color 0.5s ease;
   background-color: var(--steel-pink);
-  position: absolute; /* Añadir posición absoluta */
-  bottom: -50px; /* Colocar el botón en la parte inferior */
-  right: 0; /* Alinear el botón a la derecha */
 }
 
 .btn-submit:hover {
   background-color: #17a8ad;
 }
-/*
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-anchor a {
-  color: #fff;
-  text-decoration: none;
-}*/
 
 /* Estilos para el footer */
 .footer {
