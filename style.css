@@ -211,6 +211,18 @@ section {
 .detalles ul li {
   margin-bottom: 10px; /* Espacio entre elementos de la lista */
 }
+
+.col-md-6 {
+  display: flex; /* Usar flexbox para centrar vertical y horizontalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.col-md-6 img[src$="media/svg/me.svg"] {
+  margin-left: 50px;
+  max-width: 100%; /* Establecer el ancho máximo */
+  max-height: 800px; /* Establecer una altura máxima para controlar el tamaño */
+}
 /*  */
 
 #habilidades {
