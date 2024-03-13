@@ -223,15 +223,16 @@ section {
   max-width: 100%; /* Establecer el ancho máximo */
   max-height: 800px; /* Establecer una altura máxima para controlar el tamaño */
 }
-/*  */
 
 #habilidades h3{
   font-weight: 600;
   font-size: 3rem;
 }
+
 .container-fluid{
   margin-top: 50px;
 }
+
 .skill-col{
 margin: 0;
 padding:0 50px;
@@ -265,13 +266,10 @@ padding:0 50px;
   background-color: #d0d0d0; /* Fondo alternativo para la sección "Proyectos" */
 }
 
-#contacto {
-  padding: 50px 20px;
-}
-
 #contacto h3 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 50px;
 }
 
 #contact-form {
@@ -285,7 +283,6 @@ padding:0 50px;
 
 label {
   display: block;
-  /* Eliminar negrita */
 }
 
 input[type="text"],
@@ -294,8 +291,8 @@ textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none; /* Eliminar el contorno al seleccionar */
+  border-radius: 10px;
+  outline: none;
 }
 
 textarea {
@@ -304,15 +301,12 @@ textarea {
 
 .btn-submit {
   padding: 10px 20px;
-  background-color: var(--steel-pink);
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  /* Alineación a la derecha */
-  margin-left: auto;
-  display: block;
+  transition: background-color 0.5s ease;
+  background-color: var(--steel-pink);
 }
 
 .btn-submit:hover {
@@ -347,7 +341,7 @@ nav ul {
 }
 
 .footer-bottom a i {
-  margin-right: 5px; /* Agregar espacio entre el icono y el texto */
+  margin-right: 8px; /* Agregar espacio entre el icono y el texto */
 }
 
 /* Aplicar el desplazamiento suave al hacer clic en los enlaces del footer */
@@ -370,10 +364,9 @@ nav ul {
   text-decoration: none; /* Quitar el subrayado del texto */
 }
 
-.social-medias a  i{
+.social-medias a  i, .phone-number a i{
   margin-right: 5px;
 }
-
 
 /* Estilos para el número de teléfono en el footer */
 .phone-number {
