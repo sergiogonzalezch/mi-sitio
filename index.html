@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="landing-header">
+    <header id="head" class="landing-header">
       <nav class="navbar">
         <ul>
           <li class="nav-li">
@@ -229,38 +229,24 @@
           </li>
         </ul>
       </section>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <div class="row">
-          <div class="col-md-6">
-            <span
-              >Contacto:
-              <a href="mailto:correo@example.com">correo@example.com</a></span
-            >
-          </div>
-          <div class="col-md-6">
-            <ul class="social-media">
-              <li>
-                <a href="https://twitter.com/ejemplo" target="_blank"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/ejemplo" target="_blank"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://github.com/ejemplo" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
+      <footer id="footer" class="footer">
+        <div class="footer-top">
         </div>
-      </div>
-    </footer>
+        <div class="footer-middle">
+          <div class="social">
+            <li class="social-medias"><a href=""><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+            <li class="social-medias"><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+            <li class="social-medias"><a href=""><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+          </div>
+          <div class="phone-number"><a href="tel:+0012345678"><i class="fas fa-phone"></i>Call us</a></div>
+        </div>
+        <div class="footer-bottom">
+          <div><a href="#head" class="back-to"><i class="fa-solid fa-house"></i>Back to home</a></div>
+          <a href="mailto:correo@example.com"><i class="far fa-envelope"></i>Correo electrónico</a>
+          <p>© Copyrigth Sergio Glez 2024</p>
+        </div>
+      </footer>
+    </main>  
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

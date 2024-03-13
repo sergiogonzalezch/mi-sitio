@@ -269,31 +269,71 @@ padding:0 50px;
   background-color: #c0c0c0; /* Fondo alternativo para la sección "Contacto" */
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-nav ul, .social-media, .contact-social-media {
+nav ul, .contact-social-media {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.nav-anchor, .social-media a, .contact-social-media a {
+.nav-anchor, .contact-social-media a {
   color: #fff;
   text-decoration: none;
 }
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
+/* Estilos para el footer */
+.footer {
+  background-color: var(--night); /* Cambiar el color de fondo */
+  color: #fff; /* Cambiar el color del texto a blanco */
+  padding: 20px 0; /* Agregar espacio alrededor del contenido */
+  text-align: center; /* Centrar el texto */
 }
 
-footer .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.footer a {
+  color: #fff; /* Cambiar el color del enlace */
+  text-decoration: none; /* Quitar el subrayado del enlace */
+  transition: transform 0.3s ease; /* Transición suave de 0.3 segundos */
+  display: inline-flex; /* Mostrar el enlace como un elemento de línea flexible */
+  align-items: center; /* Alinear los elementos verticalmente */
 }
+
+.footer-bottom a i {
+  margin-right: 5px; /* Agregar espacio entre el icono y el texto */
+}
+
+/* Aplicar el desplazamiento suave al hacer clic en los enlaces del footer */
+.footer a:hover {
+  transform: translateY(-5px); /* Desplazar el enlace hacia arriba al hacer hover */
+}
+
+/* Estilos para las redes sociales en el footer */
+.social {
+  margin-bottom: 10px; /* Agregar espacio entre el contenido */
+}
+
+.social-medias {
+  display: inline-block; /* Mostrar las redes sociales en línea */
+  margin-right: 10px; /* Agregar espacio entre las redes sociales */
+}
+
+.social-medias a {
+  color: #fff; /* Cambiar el color del icono y el texto */
+  text-decoration: none; /* Quitar el subrayado del texto */
+}
+
+.social-medias a  i{
+  margin-right: 5px;
+}
+
+
+/* Estilos para el número de teléfono en el footer */
+.phone-number {
+  margin-bottom: 10px; /* Agregar espacio entre el contenido */
+}
+
+.phone-number a {
+  color: #fff; /* Cambiar el color del icono y el texto */
+  text-decoration: none; /* Quitar el subrayado del texto */
+}
+
+
+
